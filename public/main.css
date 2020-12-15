@@ -220,7 +220,7 @@ html {
 }
 
 .price {
-  font-size: 50px;
+  font-size: 2.5rem;
   font-weight: bold;
   color: #69a4e8;
 }
@@ -316,6 +316,10 @@ footer h2 {
   font-family: sans-serif;
 }
 
+#footer-menu li:hover {
+  color: white;
+}
+
 /* MEDIA QUERIES */
 
 
@@ -326,13 +330,18 @@ footer h2 {
     .card-subinfo p {
         font-size: 15px;
     }
+    .pricing-info span {
+        font-size: 1.8rem;
+    }
+
+    .pricing-info{
+      padding-left: 0.1rem;
+    }
     
     .pricing-info h3 {
         font-size: 18px;
     }
-    .pricing-info span {
-        font-size: 35px;
-    }
+    
     
     /*Section 4  */
     .luggage-section h2 {
@@ -370,6 +379,10 @@ footer h2 {
 @media only screen and (max-width: 769px) {
 
     /* Section 1 */
+    .first-section{
+      min-height: 700px;
+    }
+
     #logo{
       width: 25rem;
     }
@@ -396,6 +409,15 @@ footer h2 {
 
     .travel-options li {
       margin: 0rem 0.5rem;
+    }
+
+    /* travel slider */
+    .pricing-info span{
+      font-size: 3rem;
+    }
+
+    .card-subinfo p{
+      font-size: 25px;
     }
     /* Section 4 */
     .luggage-section h2 {
@@ -437,9 +459,23 @@ footer h2 {
         display: none !important;
     }
 
+    .card-subinfo p {
+      font-size: 15px;
+    }
+    .pricing-info span {
+        font-size: 1.8rem;
+    }
+
+    /* fly anywhere */
+
+    #we-fly-anywhere{
+      margin: 4rem 0rem;
+    }
+    
     /* Section 4 */
     .luggage-section{
-        flex-direction: column;
+      flex-direction: column;
+      margin-top: 0rem;
         
     }
     .luggage-info{
@@ -452,6 +488,7 @@ footer h2 {
         font-size: 25px;
         width: 80%;
         margin: 2rem 0rem;
+        text-align: center;
     }
     
     .luggage-section p {
@@ -482,6 +519,8 @@ footer h2 {
   #find-location{
     width: 14rem;
   }
+
+  
 }
 
 /* sm mobile */
